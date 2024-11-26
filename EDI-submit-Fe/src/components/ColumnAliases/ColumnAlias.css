@@ -1,0 +1,14 @@
+.table-responsive-alias {
+    overflow-x: auto;
+    overflow-y: auto;
+    max-height: 470px !important;
+    padding-left: 17px !important;
+    padding-right: 17px !important;
+}
+.table-history{
+    border-left: 1px solid ;
+}
+
+.table-history tr th {
+    white-space: nowrap;
+}

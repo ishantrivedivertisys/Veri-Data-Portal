@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RiemerPlus Membership Payment Experience</title>
+    <style>
+        body {
+            margin: 20px;
+            font-family: Arial, sans-serif;
+        }
+        .email-container {
+            margin: 20px;
+            padding: 20px;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            background-color: #f9f9f9;
+        }
+        .logo-container {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        .membership-details, .email-content, footer {
+            margin-bottom: 20px;
+        }
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        li {
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="email-container">
+        <div class="logo-container">
+            <img src="http://3.142.79.7:4000/riemer.png" alt="Riemer Logo" height="100px" width="300px">
+        </div>
+        <h2>RiemerPlus Membership Payment Experience</h2>
+        <div class="membership-details">
+            <p>Member: {{ data.member }}</p>
+        </div>
+        <hr>
+        <div class="email-content">
+            <p>Thank you for contributing payment experience for your memberships in:</p>
+            {{!-- <ul>
+                {{#each memberships}}
+                <li>{{ this }}</li>
+                {{/each}}
+            </ul> --}}
+            <p><strong>Data Transfer Statistics</strong></p>
+            <ul>
+                <li>FileName: {{ data.fileName }}</li>
+                <li>Date of Transfer: {{ data.dateOfTransfer }}</li>
+                <li>Date of Figures: {{ data.dateOfFigures }}</li>
+                <li>Record Count: {{ data.recordCount }}</li>
+                <li>Canadian Accts: {{ data.canadianAccounts }}</li>
+                <li>Other int'l EURO Count: {{ data.otherInternationalEURO }}</li>
+                <li>Other int'l GBP Count: {{ data.otherInternationalGBP }}</li>
+                <li>Unmapped Record Count: {{ data.invalidRecordCount }}</li>
+                <li>New Records: {{ data.newRecords }}</li>
+                <li>Inactive Accounts: {{ data.inactiveAccounts }}</li>
+                <li>Mapped Records: {{ data.mappedRecords }}</li>
+            </ul>
+            <p>Please Note: The statistics above now include the number of Canadian Customers on your payment experience file. RiemerPlus members are encouraged to join a growing number of fellow members already sharing their US and Canadian a/r portfolios.</p>
+            <p>An exception report listing any customer records which contained invalid data is available upon request.</p>
+            <p>Please contact us if you have any questions or concerns.</p>
+            <p>RiemerPlus Cantalupo & Sherman<br>24600 Detroit Road<br>Suite 100<br>Westlake, Ohio 44145</p>
+            <p>Richard Lauzau<br>(440) 835-2477 ext 121</p>
+            <p>Tech Support<br>(440) 835-2477 ext 190</p>
+            <p>arsubmissions@riemer.com</p>
+        </div>
+        <footer>
+            <p>Note: Please update your payment experience files monthly. Experience files should be e-mailed to: arsubmissions@riemer.com or uploaded directly to our <a href="https://www.riemer.com/rrshome_eper">web-page</a>.</p>
+        </footer>
+    </div>
+</body>
+</html>

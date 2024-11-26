@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RiemerPlus Membership Payment Experience</title>
+    <style>
+        body {
+            margin: 20px;
+            font-family: Arial, sans-serif;
+        }
+        .email-container {
+            margin: 20px;
+            padding: 20px;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            background-color: #f9f9f9;
+        }
+        .logo-container {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        .membership-details, .email-content, footer {
+            margin-bottom: 20px;
+        }
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        li {
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="email-container">
+        <div class="logo-container">
+            <img src="http://3.142.79.7:4000/riemer.png" alt="Riemer Logo" height="100px" width="300px">
+        </div>
+        <h2>RiemerPlus Membership Payment Experience</h2>
+        <div class="membership-details">
+           <p>File from: {{data.member}}</p>
+        </div>
+        <hr>
+        <div class="email-content">
+            <p><strong>Data File Statistics</strong></p>
+            <ul>
+                <li>FileName: {{ data.fileName }}</li>
+                <li>Date of Transfer: {{ data.dateOfTransfer }}</li>
+                <li>Date of Figures: {{ data.dateOfFigures }}</li>
+                <li>Record Count: {{ data.recordCount }}</li>
+                <li>Canadian Accts: {{ data.canadianAccounts }}</li>
+                <li>Other int'l EURO Count: {{ data.otherInternationalEURO }}</li>
+                <li>Other int'l GBP Count: {{ data.otherInternationalGBP }}</li>
+                <li>Invalid Record Count: {{ data.invalidRecordCount }}</li>
+                <li>New Records: {{ data.newRecords }}</li>
+                <li>Inactive Accounts: {{ data.inactiveAccounts }}</li>
+                <li>Mapped Records: {{ data.mappedRecords }}</li> 
+            </ul>
+            {{!-- <p>An email notification was sent to the following addresses:</p>
+            <ul>
+                {{#each addresses}}
+                <li>{{ this }}</li>
+                {{/each}}
+            </ul> --}}
+        </div>
+        <footer>
+            <p>Note: Please update your payment experience files monthly. Experience files should be e-mailed to: arsubmissions@riemer.com or uploaded directly to our <a href="https://www.riemer.com/rrshome_eper">web-page</a>.</p>
+        </footer>
+    </div>
+</body>
+</html>

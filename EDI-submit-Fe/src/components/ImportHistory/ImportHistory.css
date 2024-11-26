@@ -1,0 +1,21 @@
+/* Import History.css */
+
+.table-responsive-history {
+    overflow-x: auto;
+    overflow-y: auto;
+    padding-left: 17px;
+    padding-right: 17px;
+    max-height: 600px !important
+    
+}
+
+.table-history{
+    border-left: 1px solid ;
+}
+
+.table-history tr th {
+    white-space: nowrap;
+}
+
+
+

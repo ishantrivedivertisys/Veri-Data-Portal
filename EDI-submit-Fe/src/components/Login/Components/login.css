@@ -1,0 +1,38 @@
+.login-container {
+    display: flex;
+    height: 100vh;
+  }
+  
+  .login-left {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   background-color: #232423;
+  }
+  
+  
+  .logo {
+    width: 200px;
+  }
+  
+  .login-right {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #232423;
+  }
+  
+  .login-form {
+    /* width: 300px; */
+  }
+  
+  .p-field {
+    margin-bottom: 20px;
+  }
+  
+  .p-error {
+    color: red;
+  }
+  

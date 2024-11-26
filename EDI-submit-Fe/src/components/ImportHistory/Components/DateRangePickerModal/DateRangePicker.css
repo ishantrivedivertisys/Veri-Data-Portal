@@ -1,0 +1,25 @@
+/* DateRangePicker.css */
+.rdrDefinedRangesWrapper {
+    display: none;
+  }
+  
+  .rdrDateRangeWrapper {
+    position: relative;
+    margin-left: 16px;
+  }
+  
+  .rdrDateDisplayWrapper {
+    bottom: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.6);
+    color: #fff;
+    border-radius: 4px;
+  }
+  
+  .rdrDateDisplayItem:not(:last-child)::after {
+    margin-left: 5px;
+  }
+  
+  .rdrDateDisplayItem:last-child {
+    margin-left: 5px;
+  }

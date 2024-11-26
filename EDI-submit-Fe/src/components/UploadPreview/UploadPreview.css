@@ -1,0 +1,80 @@
+.table-responsive-preview {
+    overflow-x: auto;
+    overflow-y: auto;
+    max-height: 400px !important;
+}
+.table {
+    border-collapse: collapse; 
+}
+tbody, td, tfoot, th, thead, tr {
+  border-bottom: 1px solid #dee2e6 !important;
+  border-left: none !important;
+}
+tbody tr td:first-child{
+  border-left: 1px solid #dee2e6 !important;
+  border-right: 1px solid #dee2e6 !important;
+}
+tbody tr td:first-child{
+  border-left: 1px solid #dee2e6 !important;
+  border-right: 1px solid #dee2e6 !important;
+}
+.column-id {
+    width: 50px !important;
+  }
+
+  .sticky-column-id {
+    position: sticky;
+    left: 0;
+    z-index: 1; /* Ensure it's above other table cells */
+    background-color: white;
+    border-collapse: collapse;   
+  }
+
+  .sticky-column-id-data {
+    position: sticky;
+    left: 0;
+   
+    background-color: white;
+    border-collapse: collapse;   
+  }
+  .sticky-column-status {
+    position: sticky;
+    left: 39px;
+    z-index: 1; /* Ensure it's above other table cells */
+    background-color: white; /* Ensure it's not transparent */
+  }
+table tbody tr td.sticky-column-status-data {
+    position: sticky;
+    left: 39px;
+    border-left:0 !important;
+  }
+ 
+  .sticky-column-riemer-data,
+  .sticky-column-riemer{
+    position: sticky;
+    left: 148px;
+    background-color: white; /* Ensure it's not transparent */
+  }
+  .sticky-column-customer-ref-no {
+    position: sticky;
+    left: 276px;
+    background-color: white; /* Ensure it's not transparent */
+  }
+
+  .sticky-column-action,
+  .sticky-column-action-data{
+    position: sticky;
+    right: 0;
+    background-color: white; /* Ensure it's not transparent */
+    z-index: 1;
+    border-left: 1px solid #dee2e6 !important;
+  }
+  
+  ol > li::marker {
+    font-weight: bold;
+  }
+
+  .sticky-column-action{
+    border-left: 0.5px solid #d3d5d6 !important;
+  }
+  
